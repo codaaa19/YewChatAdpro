@@ -92,11 +92,9 @@ impl Component for Chat {
                             .iter()
                             .map(|u| UserProfile {
                                 name: u.into(),
-                                avatar: format!(
-                                    "https://avatars.dicebear.com/api/adventurer-neutral/{}.svg",
-                                    u
-                                )
-                                .into(),
+                                avatar: "https://api.dicebear.com/8.x/adventurer/svg?seed=Casper".to_string(),
+                                    
+                                
                             })
                             .collect();
                         return true;
